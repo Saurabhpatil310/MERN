@@ -20,8 +20,8 @@ const URI = process.env.MongoDBURI;
 //MongoDb Database Connection
 try {
   mongoose.connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
   });
   console.log(" Connected to MongoDB...");
 } catch (error) {
