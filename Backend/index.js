@@ -22,7 +22,9 @@ try {
   mongoose.connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    tlsAllowInvalidCertificates: true, 
+    tlsAllowInvalidCertificates: true,
+    tls: true,  
+    tlsInsecure: true  
   });
   console.log(" Connected to MongoDB...");
 } catch (error) {
