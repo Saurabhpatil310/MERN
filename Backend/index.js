@@ -19,8 +19,6 @@ const URI = process.env.MongoDBURI;
 //MongoDb Database Connection
 try {
   mongoose.connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
     tls: true,  
     tlsInsecure: true  
   });
